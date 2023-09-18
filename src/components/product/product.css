@@ -27,12 +27,6 @@
     color: #B6B6B6;
 }
 
-.productName,
-span {
-    color: #F5F5F5;
-    font-weight: bold;
-}
-
 .tips {
     display: flex;
     column-gap: 10px;
