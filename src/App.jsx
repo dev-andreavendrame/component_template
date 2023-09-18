@@ -1,7 +1,8 @@
 import "./App.css";
+import Product from "./components/product/Product";
 
 function App() {
-	return <p>Put here your component</p>;
+	return <Product image={"flower.jpg"} name="Product Name" />
 }
 
 export default App;
