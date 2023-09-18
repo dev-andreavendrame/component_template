@@ -1,0 +1,81 @@
+.container {
+  border-radius: 2.5rem;
+  overflow: hidden;
+  width: 25%;
+  height: 680px;
+  position: relative;
+}
+
+.image-container {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.avatar {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #b6b6b6;
+  z-index: 100;
+}
+.avatar-1 {
+  top: 20px;
+  left: 10px;
+}
+.avatar-2 {
+  top: 20px;
+  right: 10px;
+}
+.title {
+  color: #f5f5f5;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.subtitle {
+  color: #b6b6b6;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.description-div {
+  height: 50%;
+  background-color: #414040;
+  padding: 1rem;
+  margin-top: -10px;
+}
+.tips {
+  display: flex;
+  justify-content: end;
+  margin-right: 3rem;
+  align-items: center;
+}
+.snowflake {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.button {
+  border-radius: 1rem;
+  background: #d9d9d9;
+  width: 100%;
+  margin: auto;
+  padding: 1.2rem 1rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
