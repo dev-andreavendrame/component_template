@@ -7,8 +7,8 @@ function App() {
   return (
     <Box className="container">
       <img className="image-container" src={flower} alt="" />
-      <div className="avatar avatar-1"></div>
-      <div className="avatar avatar-2"></div>
+      <Box className="avatar avatar-1"></Box>
+      <Box className="avatar avatar-2"></Box>
       <Box className="description-div" style={{ paddingTop: "2em" }}>
         <Typography variant="h4" className="title">
           Product name
