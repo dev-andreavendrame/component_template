@@ -1,23 +1,45 @@
 import "./App.css";
+import { Box, Typography, Button } from "@mui/material";
 
 import snowflake from "./assets/images/snowflake.png";
 import flower from "./assets/images/flower.jpg";
 function App() {
   return (
-    <div className="container">
+    <Box className="container">
       <img className="image-container" src={flower} alt="" />
-	  <div className="avatar avatar-1"></div>
-	  <div className="avatar avatar-2"></div>
-      <div className="description-div">
-        <h1 className="title">Product name</h1>
-        <h2 className="subtitle">10 available</h2>
-        <div className="tips">
-          <h1 className="title">333 TIPS</h1>
+      <div className="avatar avatar-1"></div>
+      <div className="avatar avatar-2"></div>
+      <Box className="description-div" style={{ paddingTop: "2em" }}>
+        <Typography variant="h4" className="title">
+          Product name
+        </Typography>
+        <Typography variant="h5" className="subtitle">
+          10 available
+        </Typography>
+
+        <Box className="tips" style={{ marginTop: "4em" }}>
+          <Typography variant="h4" className="title">
+            333 TIPS
+          </Typography>
           <img src={snowflake} className="snowflake" alt="" />
-        </div>
-        <button className="button">Buy</button>
-      </div>
-    </div>
+        </Box>
+        <Button
+          variant="contained"
+          style={{
+            color: "black",
+            backgroundColor: "white",
+            borderRadius: "1rem",
+            padding: "0.8rem 0.5rem",
+            fontSize: "2rem",
+            fontWeight: "bolder",
+			marginTop:"1rem"
+          }}
+          className="button"
+        >
+          Buy
+        </Button>
+      </Box>
+    </Box>
   );
 }
 
