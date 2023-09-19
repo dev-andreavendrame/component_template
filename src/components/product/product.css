@@ -1,0 +1,52 @@
+.product {
+    background-color: #414040;
+    max-width: 205px;
+    border-radius: 12px;
+    margin: 12px 10px 12px 0px;
+    font-family: "Inter";
+}
+
+.productImage {
+    object-fit: cover;
+    height: 150px;
+    width: 205px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.productInfo {
+    display: flex;
+    row-gap: 0.5rem;
+    flex-direction: column;
+    padding: 8px 12px 10px 12px;
+    font-size: 16px;
+}
+
+.items {
+    color: #B6B6B6;
+}
+
+.tips {
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.topRow {
+    position: relative
+}
+
+.leftSvg,
+.rightSvg {
+    position: absolute;
+    top: 10px;
+}
+
+.leftSvg {
+    left: 10px
+}
+
+.rightSvg {
+    right: 10px
+}

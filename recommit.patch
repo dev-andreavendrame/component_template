@@ -1,0 +1,48 @@
+diff --git a/package.json b/package.json
+index 6f956f8..1b643b4 100644
+--- a/package.json
++++ b/package.json
+@@ -11,7 +11,8 @@
+   },
+   "dependencies": {
+     "react": "^18.2.0",
+-    "react-dom": "^18.2.0"
++    "react-dom": "^18.2.0",
++    "vite-plugin-svgr": "^3.2.0"
+   },
+   "devDependencies": {
+     "@types/react": "^18.2.15",
+diff --git a/src/App.jsx b/src/App.jsx
+index fc465e0..df50bbe 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -1,7 +1,8 @@
+ import "./App.css";
++import Product from "./components/product/Product";
+ 
+ function App() {
+-	return <p>Put here your component</p>;
++	return <Product image={"flower.jpg"} name="Product Name" />
+ }
+ 
+ export default App;
+diff --git a/vite.config.js b/vite.config.js
+index 5a33944..be63099 100644
+--- a/vite.config.js
++++ b/vite.config.js
+@@ -1,7 +1,14 @@
+ import { defineConfig } from 'vite'
+ import react from '@vitejs/plugin-react'
++import svgr from 'vite-plugin-svgr'
+ 
+ // https://vitejs.dev/config/
+ export default defineConfig({
+-  plugins: [react()],
++  plugins: [react(),
++  svgr({
++    svgrOptions: {
++      // svgr options
++    },
++  }),
++  ],
+ })
